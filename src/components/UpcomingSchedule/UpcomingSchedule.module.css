@@ -1,0 +1,49 @@
+.upcomingCard {
+  background-color: #f8f5fd;
+  font-family: "Inter", sans-serif;
+
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  color: darkblue;
+}
+
+.dayGroup {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 1rem;
+}
+
+.dayLabel {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #a0aec0;
+}
+
+.appointmentCard {
+  background-color: #e6e8fd;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: start;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: darkblue;
+  width: fit-content;
+}
+
+.time {
+  color: darkblue;
+  font-weight: 500;
+}

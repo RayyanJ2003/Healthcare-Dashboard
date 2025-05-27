@@ -1,0 +1,163 @@
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f8fafc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.02);
+  position: relative;
+  z-index: 5;
+  border-radius: 16px;
+}
+
+.navbarNav {
+  flex-grow: 1;
+}
+
+.appLogo {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  padding: 25px 0px 10px 0px;
+  font-weight: bolder;
+}
+.appLogo .part1 {
+  color: cyan;
+}
+.appLogo .part2 {
+  color: navy;
+}
+
+.navHeading {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  padding-left: 15px;
+}
+
+.navbarNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  margin-bottom: 5px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bolder;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navLink:hover {
+  background-color: rgba(0, 0, 255, 0.1);
+  color: darkblue;
+}
+
+.navIcon {
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.space {
+  padding: 25px 0px 15px 12px;
+  color: #a0aec0;
+  font-weight: bold;
+}
+
+.pt {
+  padding-top: 140px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .navHeading,
+  .space,
+  .pt {
+    display: none;
+  }
+
+  .navbarNav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navItem {
+    margin-bottom: 0;
+  }
+
+  .navLink {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .navIcon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .navLink span {
+    display: none;
+  }
+
+  .navIcon {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  .navLink {
+    padding: 8px;
+    justify-content: center;
+  }
+
+  .navbarNav ul {
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbarNav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navItem,
+  .navLink {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

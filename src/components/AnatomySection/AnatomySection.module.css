@@ -1,0 +1,90 @@
+.anatomySection {
+  background-color: white;
+  padding: 5px 20px 20px 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.sectionTitle {
+  font-size: 1.7rem;
+  color: navy;
+  font-weight: 600;
+  align-self: start;
+  margin: 0;
+  padding: 0;
+}
+.anatomyVisual {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  padding-left: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.floatingDiv {
+  position: absolute;
+  background-color: rgb(16, 16, 186);
+  color: white;
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 300;
+  cursor: pointer;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+.floatingDiv:hover {
+  background-color: rgba(0, 123, 255, 1);
+}
+.zoomIcon {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  font-size: 30px;
+  color: gray;
+  background: #f8fafc;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.zoomIcon:hover {
+  transform: scale(1, 1);
+}
+.bodyOutline {
+  width: fit-content;
+  height: 400px;
+  object-fit: contain;
+  background-color: #f8fafc;
+  border-radius: 11px;
+}
+.detailsLink {
+  color: rgb(107, 107, 201);
+  position: absolute;
+  bottom: -12px;
+  right: 90px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: smaller;
+  cursor: pointer;
+}
+.detailsLink:hover {
+  color: navy;
+}
+
+@media (max-width: 768px) {
+  .anatomySection {
+    padding: 20px;
+  }
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+  .anatomyVisual {
+    max-width: 250px;
+  }
+}

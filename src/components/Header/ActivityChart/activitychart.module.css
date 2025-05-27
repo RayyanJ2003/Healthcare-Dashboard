@@ -1,0 +1,64 @@
+.activityCard {
+  background-color: #f3f7fd;
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  max-width: 500px;
+  font-family: "Inter", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.title {
+  font-weight: 600;
+  color: #2c2c2c;
+  font-size: 1.1rem;
+}
+.meta {
+  font-size: 0.85rem;
+  color: #888;
+}
+.chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.dayGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+}
+.bars {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 6px;
+}
+.bar {
+  width: 5px;
+  border-radius: 2px;
+  transition: height 0.3s ease;
+}
+
+.barColor0 {
+  background-color: #ccc;
+}
+.barColor1 {
+  background-color: #00d4ff;
+}
+.barColor2 {
+  background-color: #5c4dff;
+}
+.dayLabel {
+  font-size: 0.75rem;
+  color: #666;
+}

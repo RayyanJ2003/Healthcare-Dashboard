@@ -1,0 +1,125 @@
+.calendarContainer {
+  font-family: "Inter", sans-serif;
+  padding: 2rem;
+  max-width: 700px;
+  height: 400px;
+  margin: auto;
+  background: #f8f5fd;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendarProfile {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background: cyan;
+  border-radius: 20%;
+}
+
+.addButton {
+  width: 36px;
+  height: 36px;
+  background: #4a00e0;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.calendarGrid {
+  display: flex;
+  gap: 1rem;
+}
+
+.calendarDay {
+  flex: 1;
+  text-align: center;
+  background: #f8f8f8;
+  border-radius: 16px;
+  padding: 1rem 0.5rem;
+}
+
+.selected {
+  background: #f0f4ff;
+  box-shadow: 0 0 0 2px #d0e2ff;
+}
+
+.weekday {
+  font-weight: bold;
+  color: #555;
+}
+
+.dayNumber {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.timeSlot {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  padding: 6px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.hasAppointment {
+  background-color: #e0eaff;
+}
+
+.active {
+  background-color: #3b4cd1;
+  color: white;
+  font-weight: bold;
+}
+
+.appointmentFooter {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.appointmentBox {
+  flex: 1;
+  width: fit-content;
+  padding: 1rem;
+  padding-bottom: 5px;
+  border-radius: 16px;
+  color: white;
+}
+
+.blue {
+  background-color: #3b4cd1;
+}
+
+.purple {
+  background-color: #9f84f5;
+}
+
+.appointmentBox h4 {
+  margin: 0 0 0.5rem;
+}
+
+.appointmentBox p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.appointmentBox small {
+  font-size: 0.8rem;
+}
+
+/* test */
